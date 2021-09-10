@@ -4,6 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
+//PLEASE READ!!
+/*Did not have time to add in transfers since I have to go to work. One way I would do it is shown below
+ 1. Create fields for checking and investment balance within bank account class
+2. add additional parameters and create variables in public class
+3. Create void method for transfer using checking and investment balance.
+4. Setup Unit test
+ */
+
+
 namespace BankAccountGM
 {
     /// Bank Accoun Class
@@ -48,10 +59,6 @@ namespace BankAccountGM
         public void Credit(double amount)
         {
             if (amount < 0)
-            {
-                throw new ArgumentOutOfRangeException("amount");
-            }
-            if (amount > 500)
             {
                 throw new ArgumentOutOfRangeException("amount");
             }
